@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95MX2CCB14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95MX2CCB14');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../search.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="canonical" href="https://ubgames.uk/trending" />
+    
+    <title>Trending on ubgames</title>
+    <meta name="description" content="See what games everyone are playing right now around the world on ubgames!" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+    <div id="topbar">
+    </div>
+    <script>
+        $(function(){
+          $("#topbar").load("../nav/topbar.html");
+        });
+    </script>
+
+    <div id="sidebar">
+    </div>
+    <script>
+        $(function(){
+          $("#sidebar").load("../nav/sidebar.html");
+        });
+        </script>
+    <section class="homepage">
+        <div class="game-wrapper">
+        <div class="scroll-container">
+            <br>
+            <div class="hometext">
+                <h1 class="featuredtitle">Trending</h1>
+            </div>
+            <div class="hometext">
+                <h1 class="category">Popular this month</h1>
+            </div>
+            <br>
+            <div class="game-icons">
+                <img onclick="document.location='../all-games/basket-random'" src="../images/basketrandom.jpg">
+                <img onclick="document.location='../all-games/blumgi-soccer'" src="../images/blumgisoccer.jpg">
+                <img onclick="document.location='../all-games/smash-karts'" src="../images/smashkarts.jpg">
+                <img onclick="document.location='../all-games/edge-surf'" src="../images/edgesurf.jpg">
+            </div>
+            <br>
+            <div class="hometext">
+                <h1 class="category">All-time favourites</h1>
+            </div>
+            <br>
+                <div class="game-icons">
+                    <img onclick="document.location='../all-games/retro-bowl'" src="../images/retrobowl.jpg">
+                    <img onclick="document.location='../all-games/drive-mad'" src="../images/drivemad.jpg">
+                    <img onclick="document.location='../all-games/tiny-fishing'" src="../images/tinyfishing.jpg">
+                    <img onclick="document.location='../all-games/block-blast'" src="../images/blockblast.jpg">
+                </div>
+            </div>
+            <br>
+                <div class="scroll-container">
+                    <div class="game-icons">
+                        <img onclick="document.location='../all-games/slice-master'" src="../images/slicemaster.jpg">
+                        <img onclick="document.location='../all-games/penalty-kicks'" src="../images/penaltykicks.jpg">
+                        <img onclick="document.location='../all-games/a-small-world-cup'" src="../images/asmallworldcup.jpg">
+                        <img onclick="document.location='../all-games/worlds-hardest-game'" src="../images/worldshardestgame.jpg">
+                    </div>
+                </div>
+                <br>
+                    <div class="scroll-container">
+                        <div class="game-icons">
+                            <img onclick="document.location='../all-games/the-impossible-quiz'" src="../images/theimpossiblequiz.jpg">
+                            <img onclick="document.location='../all-games/wordle'" src="../images/wordle.jpg">
+                            <img onclick="document.location='../all-games/vex-7'" src="../images/vex7.jpg">
+                            <img onclick="document.location='../all-games/papas-pizzeria'" src="../images/papaspizzeria.jpg">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="scroll-container">
+                        <div class="game-icons">
+                            <img onclick="document.location='../all-games/core-ball'" src="../images/coreball.jpg">
+                            <img onclick="document.location='../all-games/stickman-boost'" src="../images/stickmanboost.jpg">
+                            <img onclick="document.location='../all-games/slope'" src="../images/slope.jpg">
+                            <img onclick="document.location='../all-games/slope-2'" src="../images/slope2.jpg">
+                        </div>
+                    </div>
+                    <br>
+                        </div>
+                            <br>
+                            <div id="footer">
+                            </div>
+                            <script>
+                                $(function(){
+                                  $("#footer").load("../nav/footer.html");
+                                });
+                                </script>
+                        </div>
+     </div>
+
+    
+          
+
+    </section>
+
+    <script>
+        document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    if(key===13){
+            if(!document.fullscreen){
+        doSearch()};}
+            }
+    </script>
+
+</body>
+</html>
